@@ -26,8 +26,6 @@
 //     })
 // }
 
-
-
 // const Home=function () {
 //     fetch("https://striveschool-api.herokuapp.com/api/product/",{
 //         headers:{
@@ -37,30 +35,47 @@
 
 //     .then((response)=>{
 //         if (response.ok) {
-            
+
 //             Card()
 //         }else{
 //             console.log("si è verificato un errore")
 //         }
 //     })
 
-    
 //     .catch((err)=>{
 //          console.log("ecco l'errore",err)
 //     })
 // }
 // Home()
+let cardDelete = document.getElementById("rimuovi");
+let heroDelete = document.getElementById("heroRemove");
+let dressDelete = document.getElementById("dressDelete");
+let nagatoro = document.getElementById("nagatoro");
 
-
-const deleteCard = document.querySelectorAll('.btn-danger ');
-
-
-deleteCard.forEach(button => {
-  button.addEventListener('click', () => {
-    
-      const card = button.parentElement;
-      
-      card.remove();
+const deleteCard = document.querySelectorAll(".bottone ");
+const deleteKey = document.querySelectorAll(".delete");
+const deleteDanger = document.querySelectorAll(".pericolo");
+const elimina = document.querySelectorAll(".elimina");
+deleteCard.forEach((button) => {
+  button.addEventListener("click", () => {
+    cardDelete.remove();
   });
 });
 
+deleteKey.forEach((button) => {
+  button.addEventListener("click", () => {
+    heroDelete.remove();
+  });
+});
+
+elimina.forEach((button) => {
+  button.addEventListener("click", () => {
+    nagatoro.remove();
+  });
+});
+
+deleteDanger.forEach((button) => {
+  button.addEventListener("click", () => {
+    dressDelete.remove();
+  });
+});
